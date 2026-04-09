@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSintonia | Inteligência e Terra</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Agro<span>Sintonia</span></div>
+            <div class="a11y-toolbar">
+                <button id="contrast-toggle">🌓</button>
+                <button id="font-increase">A+</button>
+                <button id="font-decrease">A-</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-premium">
+            <div class="hero-overlay"></div>
+            <div class="container hero-inner">
+                <span class="badge reveal">Sustentabilidade 4.0</span>
+                <h1 class="reveal">Onde a Inovação <br>Encontra o Agro </h1>
+                <p class="reveal">Unindo inteligência de dados com o respeito ao solo para alimentar as próximas gerações sem esgotar o planeta.</p>
+                <div class="hero-btns reveal">
+                    <a href="#solucoes" class="btn-main">Nossas Soluções</a>
+                    <a href="#tecnologia" class="btn-outline">Ver Tecnologia</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-bar reveal">
+            <div class="container grid-stats">
+                <div class="stat-item"><strong>30%</strong> <span>Menos Água</span></div>
+                <div class="stat-item"><strong>+25%</strong> <span>Produtividade</span></div>
+                <div class="stat-item"><strong>15k</strong> <span>Hectares Reflorestados</span></div>
+                <div class="stat-item"><strong>0%</strong> <span>Desperdício</span></div>
+            </div>
+        </section>
+
+        <section id="solucoes" class="container reveal">
+            <div class="section-title">
+                <h2>Pilares da Produção Moderna</h2>
+                <p>Como equilibramos o lucro agrícola com a saúde do ecossistema.</p>
+            </div>
+            <div id="cards-container" class="grid-premium">
+                </div>
+        </section>
+
+        <section id="tecnologia" class="tech-info reveal">
+            <div class="container flex-tech">
+                <div class="tech-text">
+                    <h2>Tecnologia de Precisão</h2>
+                    <p>Utilizamos <strong>Drones de Varredura Multiespectral</strong> e <strong>Sensores de Solo em Tempo Real</strong> para entender o que cada metro quadrado da fazenda precisa.</p>
+                    <ul class="tech-list">
+                        <li>Irrigação controlada por IA.</li>
+                        <li>Plantio direto com mínima perturbação.</li>
+                        <li>Controle biológico de pragas.</li>
+                    </ul>
+                </div>
+                <div class="tech-img-box">
+                    <img src="imagempnj.png" alt="Drone sobrevoando plantação">
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-modern reveal">
+            <div class="container">
+                <h2>Conhecimento e Transparência</h2>
+                <div id="accordion-root">
+                    </div>
+            </div>
+        </section>
+
+        <section class="video-section reveal">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Visão 2026: O Futuro das Agtechs</h2>
+                    <p>Confira as tendências que estão transformando o campo este ano.</p>
+                </div>
+                <div class="video-wrapper" style="max-width: 900px; margin: 0 auto; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                    <video controls style="width: 100%; display: block;">
+                        <source src="Agro_2026__Tendências_e_Agtechs.mp4" type="video/mp4">
+                        Seu navegador não suporta a reprodução de vídeos.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-agro" class="container reveal" style="margin-top: 50px; padding: 40px 20px; background: rgba(0,0,0,0.05); border-radius: 15px;">
+    <div class="section-title">
+        <h2>Desafio AgroSintonia</h2>
+        <p>Teste seus conhecimentos sobre o agro moderno e sustentável!</p>
+    </div>
+    <div id="quiz-container" style="max-width: 600px; margin: 0 auto; text-align: center;">
+        <div id="question-box">
+            <h3 id="question-text">Carregando pergunta...</h3>
+            <div id="options-container" style="display: grid; gap: 10px; margin: 20px 0;"></div>
+        </div>
+        <div id="feedback-box" style="display: none; padding: 15px; border-radius: 8px; margin-top: 15px; font-weight: bold;"></div>
+        <button id="next-btn" class="btn-main" style="display: none; margin-top: 20px; width: 100%;">Próxima Pergunta</button>
+    </div>
+</section>
+<section id="game-area" class="container reveal" style="text-align: center; margin-top: 50px;">
+            <h2>AgroSintonia Game: Defenda a Plantação</h2>
+            <p>Use suas habilidades para proteger nossa lavoura de invasores!</p>
+            
+            <div id="game-container" style="position: relative; width: 100%; height: 600px; overflow: hidden; border-radius: var(--radius); border: 4px solid var(--primary);">
+                <div id="ui-layer" style="position: absolute; top: 10px; left: 10px; pointer-events: none; z-index: 10;">
+                    <div class="stat" style="font-size: 20px; color: white;">Pontos: <span id="score">0</span></div>
+                    <div class="stat" style="font-size: 20px; color: white;">Vidas: <span id="lives">❤️❤️❤️</span></div>
+                </div>
+
+                <div id="menu-game" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.8); padding: 20px; border-radius: 10px; color: white; z-index: 20;">
+                    <h3>O Pescador de Pragas</h3>
+                    <button id="start-btn" style="background: var(--primary); color: white; padding: 10px 20px; border: none; cursor: pointer;">Começar Defesa</button>
+                </div>
+
+                <canvas id="gameCanvas"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <div class="logo">Agro<span>Sintonia</span></div>
+                <p>Liderando a transição para o agro regenerativo.</p>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Fale Conosco</h4>
+                <form id="form-contato" style="display: flex; flex-direction: column; gap: 10px;">
+                    <input type="telefone" name="telefone" placeholder="Seu telefone" required 
+                        style="padding: 8px; border-radius: 4px; border: 1px solid #000000;">
+                    <input type="email" name="email" placeholder="Seu e-mail" required 
+                        style="padding: 8px; border-radius: 4px; border: 1px solid #000000;">
+                    
+                    <textarea name="sugestoes" placeholder="Envie suas sugestões ou dúvidas..." rows="3" required
+                        style="padding: 8px; border-radius: 4px; border: 1px solid #000000; resize: none;"></textarea>
+                    
+                    <button type="submit" class="btn-main" style="cursor: pointer; padding: 10px;">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <div class="footer-copy">
+                &copy; 2026 Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
